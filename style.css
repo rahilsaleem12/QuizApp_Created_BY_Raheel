@@ -30,6 +30,8 @@ h3{
   color: #000000;
   font-weight: bolder;
   border-color: #ffffff;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .section1{
     display: flex;
