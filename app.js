@@ -1,24 +1,29 @@
 var totalmaks = 0;
+var remain = 10;
 var div = document.getElementById("section1");
 
 function submit1() {
   var input1 = document.getElementById("radio1");
   var input2 = document.getElementById("radio2");
   var input3 = document.getElementById("radio3");
+  var input4 = document.getElementById("radio4");
 
-  if (input3.checked && input3.value === "Islamabad") {
+  if (input1.checked && input1.value === "56") {
     totalmaks += 2;
     console.log("Your answer is correct!");
     console.log(totalmaks);
   } else {
     console.log("Your answer is wrong!");
+    
   }
+  remain -= 1;
+  console.log(remain);
   div.style.display = "none";
 
   document.getElementById("section2").style.display = "block";
   calculateTotalMarks();
+  document.getElementById("remain").innerHTML=remain;
 }
-
 
 var time1 = 10;
 var id1 = setInterval(function(){
@@ -37,9 +42,10 @@ setTimeout(() => {
 
 
 function submit2() {
-  var input4 = document.getElementById("radio4");
-  var input5 = document.getElementById("radio5");
-  var input6 = document.getElementById("radio6");
+  var input4 = document.getElementById("radio5");
+  var input5 = document.getElementById("radio6");
+  var input6 = document.getElementById("radio7");
+  var input6 = document.getElementById("radio8");
 
   if (input6.checked && input6.value === "4") {
     console.log("Your answer is correct!");
@@ -62,7 +68,7 @@ var id2 = setInterval(function(){
 }, 1000);
 
 setTimeout(() => {
-  div.style.display = "none";
+  // div.style.display = "none";
   document.getElementById("section2").style.display = "none";
   document.getElementById("section3").style.display = "block";
   clearInterval(id2);
@@ -92,6 +98,22 @@ function submi3() {
 
   calculateTotalMarks();
 }
+
+
+var time3 = 30;
+var id3 = setInterval(function(){
+  time3--
+//   console.log(time1);
+  document.getElementById("timer3").innerText=time3;
+ 
+}
+,1000
+)
+setTimeout(() => {
+  div.style.display = "none";
+  document.getElementById("section4").style.display = "block";
+  clearInterval(id3)
+}, 30000);
 
 function submit4() {
   var input10 = document.getElementById("radio10");

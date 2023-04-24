@@ -7,6 +7,7 @@
   border-radius: 100px;
   width: 100%;
   margin: 0% auto;
+
 }
 .marks{
   color: white;
@@ -15,7 +16,23 @@ h3{
   color: white;
   text-align: center;
 }
-.options{
+.option1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  border-color: #ffffff;
+}
+.option2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  border-color: #ffffff;
+}
+.option3{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -38,7 +55,7 @@ h3{
     display: flex;
     flex-direction: column;
     background-color: rgb(0, 0, 0);
-    align-items: center;
+    align-items: center !important;
   }
 .section{
     display: flex;
@@ -46,7 +63,9 @@ h3{
     background-color: rgb(0, 0, 0);
     align-items: center;
     display: none;
+    text-align: center;
   }
+
   
   .radio-boxes {
     display: flex;
@@ -93,10 +112,17 @@ background-color: red;
     border-radius: 20px 20px 20px 20px;
     width: 120px;
     font-size: 20px;
-    margin-top: 10%;
+    margin-top: 5%;
   }
   .timer1{
-     color: rgb(255, 255, 255);
+     color: red;
      font-size: 50px;
+     background-color: yellow;
+     width: 60px;
+     border-radius: 50%;
+     padding: 10px;
+     text-align: center;
+    /* width: 50%; */
+    margin: 0% auto;
   }
-  
+
